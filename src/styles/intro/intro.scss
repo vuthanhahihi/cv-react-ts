@@ -1,0 +1,77 @@
+@import "../../global.scss";
+
+.container-fluid {
+  margin-top: 70px;
+  background-color: white;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .row {
+    .imgContainer {
+      width: 650px;
+      height: 650px;
+      background-color: crimson;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      float: right;
+
+      img {
+        height: 80%;
+      }
+    }
+    .wrapper {
+      padding-left: 180px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      @include Responsive(XS) {
+        padding-left: 20px;
+      }
+      @include Responsive(SM) {
+        padding-left: 80px;
+      }
+      @include Responsive(MD) {
+        padding-left: 180px;
+      }
+      @include Responsive(XL) {
+        padding-left: 180px;
+      }
+
+      h1 {
+        font-size: 60px;
+        margin: 10px 0;
+        color: crimson;
+      }
+      h2 {
+        font-size: 35px;
+        margin-top: 20px;
+      }
+      h3 {
+        font-size: 30px;
+      }
+
+      a {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+
+        .icon {
+          color: crimson;
+          font-size: 60px;
+          margin-bottom: 30px;
+          animation: arrowBlink 2s infinite;
+        }
+
+        @keyframes arrowBlink {
+          100% {
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+}

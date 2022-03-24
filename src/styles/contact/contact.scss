@@ -1,0 +1,44 @@
+.contact {
+  margin-top: 70px;
+  background-color: white;
+  overflow: auto;
+  &::-webkit-scrollbar{
+    display: none;
+}
+  
+  .contact{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px;
+
+      h1{
+        font-size: 60px;
+        
+      }
+      p{
+        margin: 10px 0;
+      }
+      
+  }
+
+  .container {
+    display: flex;
+
+    .left {
+      flex: 0.5;
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+    .right {
+      flex: 0.5;
+      
+      input{
+          margin-bottom: 10px;
+      }
+
+   
+    }
+  }
+}

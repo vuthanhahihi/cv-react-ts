@@ -1,0 +1,15 @@
+@import "../../global.scss";
+
+.portfolio{
+    margin-top: 70px;
+    background-color: white;
+    display: flex;
+
+    .container{
+        overflow: auto;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+
+}
